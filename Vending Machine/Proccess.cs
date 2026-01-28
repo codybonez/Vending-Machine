@@ -41,6 +41,11 @@ namespace Vending_Machine
                                 Console.WriteLine("Enjoy your RootBeer");
                                 isSelected = true;
                             }
+                            else if (itemName.Equals("Sprite", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Sprite");
+                                isSelected = true;
+                            }
                             else
                             {
                                 Console.WriteLine("Not the correct soda in the vending machine, going back.");
@@ -68,6 +73,11 @@ namespace Vending_Machine
                                 Console.WriteLine("Enjoy your SunChips");
                                 isSelected = true;
                             }
+                            else if (itemName.Equals("Cheetos", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Cheetos");
+                                isSelected = true;
+                            }
                             else
                             {
                                 Console.WriteLine("Not the correct chips in the vending machine, going back.");
@@ -92,6 +102,16 @@ namespace Vending_Machine
                             else if (itemName.Equals("Reeses", StringComparison.OrdinalIgnoreCase))
                             {
                                 Console.WriteLine("Enjoy your Reeses");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("KitKat", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your KitKat");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("Oreos", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Oroes");
                                 isSelected = true;
                             }
                             else
