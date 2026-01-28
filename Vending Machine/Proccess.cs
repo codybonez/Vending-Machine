@@ -8,13 +8,31 @@ namespace Vending_Machine
 {
     public static class Proccess
     {
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
         public static void VendingMachineMenu()
         {
             string itemName ="";
                 int vendingNumber = 0;
                 bool isSelected = false;
+
+            string time = DateTime.Now.ToString("MM-dd-yyyy");
+            string path = "logs";
+            string fileName = "log.txt";
+
+            if (!string.IsNullOrWhiteSpace(path) && !Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            if (!File.Exists($"{path}/{fileName}"))
+            {
+                File.Create($"{path}/{fileName}");
+            }
+
             do
             {
                 Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, 3 = Candy, and 4 = Exit");
@@ -28,16 +46,19 @@ namespace Vending_Machine
                             itemName = Console.ReadLine();
                             if (itemName.Equals("CocaCola", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"Added CocaCola at {time}");
                                 Console.WriteLine("Enjoy your CocaCola");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Pepsi", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"Added Pepsi at {time}");
                                 Console.WriteLine("Enjoy your Pepsi");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("RootBeer", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"Added RootBeer at {time}");
                                 Console.WriteLine("Enjoy your RootBeer");
                                 isSelected = true;
                             }
