@@ -8,18 +8,14 @@ namespace Vending_Machine
 {
     public static class Proccess
     {
-<<<<<<< Updated upstream
 
-
-=======
->>>>>>> Stashed changes
         public static void VendingMachineMenu()
         {
             string itemName ="";
                 int vendingNumber = 0;
                 bool isSelected = false;
 
-            string time = DateTime.Now.ToString("MM-dd-yyyy");
+            string time = DateTime.Now.ToString("MM-dd-yyyy HH:mm:ss");
             string path = "logs";
             string fileName = "log.txt";
 
@@ -46,24 +42,25 @@ namespace Vending_Machine
                             itemName = Console.ReadLine();
                             if (itemName.Equals("CocaCola", StringComparison.OrdinalIgnoreCase))
                             {
-                                File.AppendAllText($"{path}/{fileName}", $"Added CocaCola at {time}");
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded CocaCola at {time}");
                                 Console.WriteLine("Enjoy your CocaCola");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Pepsi", StringComparison.OrdinalIgnoreCase))
                             {
-                                File.AppendAllText($"{path}/{fileName}", $"Added Pepsi at {time}");
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded Pepsi at {time}");
                                 Console.WriteLine("Enjoy your Pepsi");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("RootBeer", StringComparison.OrdinalIgnoreCase))
                             {
-                                File.AppendAllText($"{path}/{fileName}", $"Added RootBeer at {time}");
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded RootBeer at {time}");
                                 Console.WriteLine("Enjoy your RootBeer");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Sprite", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded Sprite at {time}");
                                 Console.WriteLine("Enjoy your Sprite");
                                 isSelected = true;
                             }
@@ -77,25 +74,29 @@ namespace Vending_Machine
 
                     case 2:
                     
-                         Console.WriteLine("\nSelect chips [Lays, Pringles, SunChips]");
+                         Console.WriteLine("\nSelect chips [Lays, Pringles, SunChips, Cheetos]");
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Lays", StringComparison.OrdinalIgnoreCase))
                             {
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded Lays at {time}");
                                 Console.WriteLine("Enjoy your Lays");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Pringles", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded Pringles at {time}");
                                 Console.WriteLine("Enjoy your Pringles");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("SunChips", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded SunChips at {time}");
                                 Console.WriteLine("Enjoy your SunChips");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Cheetos", StringComparison.OrdinalIgnoreCase))
                             {
+                                File.AppendAllText($"{path}/{fileName}", $"\nAdded Cheetos at {time}");
                                 Console.WriteLine("Enjoy your Cheetos");
                                 isSelected = true;
                             }
@@ -108,31 +109,36 @@ namespace Vending_Machine
                         break;
                     case 3:
 
-                            Console.WriteLine("\nSelect Candy [Snickers, Twix, Reeses]");
+                            Console.WriteLine("\nSelect Candy [Snickers, Twix, Reeses, KitKat, Oreos]");
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Snickers", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Snickers");
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded Snickers at {time}");
+                            Console.WriteLine("Enjoy your Snickers");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Twix", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Twix");
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded Twix at {time}");
+                            Console.WriteLine("Enjoy your Twix");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Reeses", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Reeses");
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded Reeses at {time}");
+                            Console.WriteLine("Enjoy your Reeses");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("KitKat", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your KitKat");
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded KitKat at {time}");
+                            Console.WriteLine("Enjoy your KitKat");
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Oreos", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Oroes");
+                            File.AppendAllText($"{path}/{fileName}", $"\nAdded Oreos at {time}");
+                            Console.WriteLine("Enjoy your Oroes");
                                 isSelected = true;
                             }
                             else
