@@ -121,6 +121,7 @@ namespace Vending_Machine
                             }
                         break;
 
+
                             case 4:
                         Console.WriteLine("Exiting vending machine");
                         break;
