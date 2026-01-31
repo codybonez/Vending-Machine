@@ -15,7 +15,10 @@ namespace Vending_Machine
             string itemName ="";
                 int vendingNumber = 0;
                 bool isSelected = false;
-            do
+            // choose path of choice
+            string path = @"C:Downloads\Git_Vending.txt";
+           
+                do
             {
                 Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, 3 = Candy, and 4 = Exit");
                 vendingNumber = Int32.Parse(Console.ReadLine());
@@ -28,22 +31,42 @@ namespace Vending_Machine
                             itemName = Console.ReadLine();
                             if (itemName.Equals("CocaCola", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your CocaCola");
+                                string createText = "Enjoy Your CocaCola" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your CocaCola" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Pepsi", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Pepsi");
+                                string createText = "Enjoy Your Pepsi" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Pepsi" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("RootBeer", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your RootBeer");
+                                string createText = "Enjoy Your RootBeer" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your RootBeer" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Sprite", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Sprite");
+                                string createText = "Enjoy Your Sprite" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Sprite" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else
@@ -60,22 +83,42 @@ namespace Vending_Machine
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Lays", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Lays");
-                                isSelected = true;
+                                string createText = "Enjoy Your Lays" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Lays" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                               string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
+                            isSelected = true;
                             }
                             else if (itemName.Equals("Pringles", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Pringles");
+                                string createText = "Enjoy Your Pringles" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Pringles" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("SunChips", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your SunChips");
+                                string createText = "Enjoy Your SunChips" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your SunChips" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Cheetos", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Cheetos");
+                                string createText = "Enjoy Your Cheetos" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Cheetos" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else
@@ -91,27 +134,52 @@ namespace Vending_Machine
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Snickers", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Snickers");
+                                string createText = "Enjoy Your Snickers" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Snickers" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Twix", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Twix");
+                                string createText = "Enjoy Your Twix" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Twix" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Reeses", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Reeses");
+                                string createText = "Enjoy Your Reeses" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Reeses" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("KitKat", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your KitKat");
+                                string createText = "Enjoy Your KitKat" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your KitKat" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else if (itemName.Equals("Oreos", StringComparison.OrdinalIgnoreCase))
                             {
-                                Console.WriteLine("Enjoy your Oroes");
+                                string createText = "Enjoy Your Oreos" + Environment.NewLine;
+                                File.WriteAllText(path, createText);
+                                string appendText = "Enjoy Your Oroes" + Environment.NewLine;
+                                File.AppendAllText(path, appendText);
+                                string readText = File.ReadAllText(path);
+                                Console.WriteLine(readText);
                                 isSelected = true;
                             }
                             else
