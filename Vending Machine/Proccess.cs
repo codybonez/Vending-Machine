@@ -17,7 +17,7 @@ namespace Vending_Machine
                 bool isSelected = false;
             do
             {
-                Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, 3 = Candy, and 4 = Exit");
+                Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, 3 = Candy, 4 = Poptarts and 5 = Exit");
                 vendingNumber = Int32.Parse(Console.ReadLine());
                 switch (vendingNumber)
                 {
@@ -120,9 +120,37 @@ namespace Vending_Machine
                                 isSelected = false;
                             }
                         break;
+                    case 4:
+                            Console.WriteLine("\nSelect Poptarts [Strawberry, BrownSugar, S'mores]");
+                            itemName = Console.ReadLine();
+                            if (itemName.Equals("Strawberry", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Strawberry Poptarts");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("BrownSugar", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your BrownSugar Poptarts");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("S'mores", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your S'mores Poptarts");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("Blueberry", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Blueberry Poptarts");
+                                isSelected = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Not the correct poptart in the vending machine, going back.");
+                                isSelected = false;
+                        }
+                            break;
 
-
-                            case 4:
+                    case 5:
                         Console.WriteLine("Exiting vending machine");
                         break;
 
@@ -132,7 +160,7 @@ namespace Vending_Machine
                         break;
 
                 }
-            } while (vendingNumber != 4);
+            } while (vendingNumber != 5);
         }
 
     }
